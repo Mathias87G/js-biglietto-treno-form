@@ -32,11 +32,11 @@ document.getElementById('genera').addEventListener("click", function () {
   //mostra ticket al click
   var ticket = document.getElementById('ticket');
   ticket.className = "show";
-}
-);
+});
 //  eventi al click del bottone annulla
 document.getElementById('annulla').addEventListener("click", function () {
   var ticket = document.getElementById('ticket');
   ticket.className = "hidden";
-}
-)
+});
+
+console.log(cab);
