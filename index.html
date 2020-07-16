@@ -6,9 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
-
-
     <title>Biglietto treno</title>
+
   </head>
   <body>
     <div class="container">
@@ -19,30 +18,29 @@
           <div class="form-card-ctr">
             <div class="form-card">
               <h4>Nome e Cognome</h4>
-              <input type="text" name="" value="" placeholder="Inserire il nome">
+              <input id="name" type="text" name="nome e cognome" placeholder="Inserire il nome">
             </div>
             <div class="form-card">
               <h4>Km da percorrere</h4>
-              <input type="number" name="" value="0">
+              <input id="km" type="number" name="km" value="0">
             </div>
             <div class="form-card">
               <h4>Fascia d'età</h4>
-              <select class="" name="">
-                <option value="minorenne">Minorenne</option>
-                <option value="maggiorenne">Maggiorenne</option>
-                <option value="over65">Over 65</option>
+              <select id="age" name="age">
+                <option value="0">Minorenne</option>
+                <option value="1">Maggiorenne</option>
+                <option value="2">Over 65</option>
               </select>
             </div>
           </div>
           <div class="form-btns">
-            <button type="button" name="button">Genera</button>
-            <button type="button" name="button">Annulla</button>
+            <button id="genera" type="button" name="button">Genera</button>
+            <button id="annulla" type="button" name="button">Annulla</button>
           </div>
         </div>
       </div>
-
       <!-- Ticket print -->
-      <div class="ticket">
+      <div id="ticket"class="hidden">
         <h2>il tuo biglietto</h2>
         <div class="ticket-ctr">
           <div class="ticket-detail">
@@ -51,6 +49,7 @@
           <div class="travel-detail clearfix">
             <div class="traveller">
               <h3>nome passeggero</h3>
+              <div id="travellerName"></div>
             </div>
             <div class="travel">
               <table>
@@ -61,24 +60,17 @@
                   <th>Costo biglietto</th>
                 </tr>
                 <tr>
-                  <td>Sconto vecchio</td>
-                  <td>7</td>
-                  <td>09876</td>
-                  <td>3.363</td>
+                  <td id="discountType"></td>
+                  <td id="cab"></td>
+                  <td id="cpNumber"></td>
+                  <td id="ticketPrice"></td>
                 </tr>
               </table>
-
             </div>
           </div>
         </div>
-
-
       </div>
-
-
-
     </div>
-
 
     <script src="js/script.js" charset="utf-8"></script>
   </body>

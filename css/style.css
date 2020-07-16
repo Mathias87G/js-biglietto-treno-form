@@ -61,19 +61,29 @@
 
 /* ticket print */
 
-.ticket {
+#ticket {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.ticket h2 {
+.hidden {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.show {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#ticket h2 {
   color: white;
   text-transform: uppercase;
   padding: 20px 0
 }
 
-.ticket h3 {
+#ticket h3 {
   text-transform: uppercase;
 }
 
@@ -97,6 +107,12 @@
   float: left;
   width: 30%;
   height: 230px;
+}
+
+#travellerName {
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-size: 24px;
 }
 
 .traveller h3 {
