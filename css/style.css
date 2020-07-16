@@ -4,16 +4,30 @@
   box-sizing: border-box;
 }
 
+..clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .container {
   width: 100%;
   height: 100vh;
   background-color: rgb(128, 27, 69);
 }
 
+/* form insert */
+
 .insert {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+.insert h2 {
+  color: white;
+  text-transform: uppercase;
+  padding: 20px 0;
 }
 
 .insert-form {
@@ -25,4 +39,82 @@
 .form-card-ctr {
   display: flex;
   justify-content: center;
+  padding: 50px 0;
+}
+
+.form-card {
+  padding: 0 30px;
+  color: rgb(128, 27, 69);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-card h4 {
+  padding-bottom: 15px;
+}
+
+.form-btns {
+  display: flex;
+  justify-content: center;
+}
+
+/* ticket print */
+
+.ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket h2 {
+  color: white;
+  text-transform: uppercase;
+  padding: 20px 0
+}
+
+.ticket h3 {
+  text-transform: uppercase;
+}
+
+.ticket-ctr {
+  height: 300px;
+  width: 80%;
+  background-color: white;
+}
+
+.ticket-detail h3 {
+  padding: 10px 5px;
+}
+
+.travel-detail {
+  padding: 0 20px;
+  height: 100%;
+}
+
+.traveller {
+  background-color: grey;
+  float: left;
+  width: 30%;
+  height: 230px;
+}
+
+.traveller h3 {
+  padding: 30px 20px;
+}
+
+.travel {
+  width: 70%;
+  float: left;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
+}
+
+table th, table td {
+  text-align: left;
+  padding: 20px 5px 40px 20px;
+  font-size: 18px;
 }
