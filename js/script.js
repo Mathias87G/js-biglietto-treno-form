@@ -17,7 +17,7 @@ document.getElementById('genera').addEventListener("click", function () {
   var cab = Math.floor(Math.random()*9) + 1;
   document.getElementById('cab').innerHTML = cab;
   // numero casuale da 90000 a 100000 escluso per codice CP
-  var cpNumber = Math.floor(Math.random()*99999) + 1;
+  var cpNumber = Math.floor(Math.random()*(99999-90000)) + 90000;
   document.getElementById('cpNumber').innerHTML = cpNumber;
   // Calcolo prezzo biglietto
   var km = document.getElementById('km').value;
